@@ -1,0 +1,1 @@
+print('94\noptimus576')
