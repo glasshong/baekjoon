@@ -1,8 +1,7 @@
-total = 0
+t = 0
 for i in range(5):
-    point = int(input())
-    if point < 40:
-        point = 40
-    total += point
-average = int(total / 5)
-print(average)
+    p = int(input())
+    if p < 40:
+        p = 40
+    t += p
+print(int(t/5))
