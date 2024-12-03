@@ -1,6 +1,6 @@
-word = list(str(input()))
+w = list(input())
 
-if list(reversed(word)) == word:
+if list(reversed(w)) == w:
     print(1)
 else:
     print(0)
