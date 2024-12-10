@@ -1,6 +1,8 @@
-a, b = map(int, input().split())
-l = [b-a]
-for i in range(1, 4):
+t = 0
+l = []
+for i in range(4):
     a, b = map(int, input().split())
-    l.append(l[i-1]+b-a)
+    t -= a
+    t += b
+    l.append(t)
 print(max(l))
