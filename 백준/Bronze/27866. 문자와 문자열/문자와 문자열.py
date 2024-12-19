@@ -1,2 +1,2 @@
-S = list(str(input()))
+S = input()
 print(S[int(input())-1])
