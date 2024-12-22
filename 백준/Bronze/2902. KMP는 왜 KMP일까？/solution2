@@ -1,0 +1,5 @@
+a = ''
+b = input().replace('-', ' ').split()
+for i in b:
+    a += i[0]
+print(a)
