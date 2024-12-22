@@ -1,0 +1,3 @@
+l = input().split('-')
+for i in l:
+    print(i[0], end='') # end=''을 통하여 줄 바꿈 없이 연속적으로 출력
