@@ -1,0 +1,2 @@
+X, Y = map(str, input()[::-1].split())
+print(int(str(X+Y)[::-1]))
