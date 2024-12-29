@@ -1,6 +1,5 @@
-import sys
-N = int(sys.stdin.readline())
-l = list(map(int, sys.stdin.readline().split()))
+N = int(input())
+l = list(map(int, input().split()))
 l.sort()
 s = 0
 for i in range(N):
