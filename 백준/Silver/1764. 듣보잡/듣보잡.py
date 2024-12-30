@@ -1,12 +1,13 @@
-N, M = map(int, input().split())
+import sys
+N, M = map(int, sys.stdin.readline().split())
 
 a = set()
 for _ in range(N):
-    a.add(input())
+    a.add(sys.stdin.readline().strip())
 
 b = set()
 for _ in range(M):
-    b.add(input())
+    b.add(sys.stdin.readline().strip())
 
 u = sorted(list(a & b))
 
