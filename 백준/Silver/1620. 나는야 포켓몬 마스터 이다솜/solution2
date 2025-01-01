@@ -1,0 +1,17 @@
+import sys
+input = sys.stidn.readline
+
+N, M = map(int, input().split())
+
+d = {}
+for i in range(N):
+    a = input().rstrip() # 오른쪽 끝에 있는 공백 문자 제거
+    d[i+1] = a
+    d[a] = i+1 # 딕셔너리에 숫자와 문자열을 키와 값으로 모두 저장하는 방법
+
+for _ in range(M):
+    b = input().rstrip() # sys.stdin.readline 으로 받으면 문자열이니까 아래 isdigit()을 통해 숫자형의 경우와 구분
+    if a.isdigit(): # 문자열이 하나 이상의 문자로 구성되어 있고, 그 문자가 모두 숫자(0~9)로 이루어져 있으면 True
+        print(d[int(a)])
+    else:
+        print(d[a])
