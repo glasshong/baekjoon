@@ -1,16 +1,12 @@
 import sys
 input = sys.stdin.readline
-
-N, M = map(int, input().rstrip().split())
-l = list(map(int, input().rstrip().split()))
+N, M = map(int, input().split())
+l = list(map(int, input().split()))
 a = 0
-w = []
-for i in range(N):
-    a += l[i]
+w = [0]
+for i in l:
+    a += i
     w.append(a)
 for _ in range(M):
-    i, j = map(int, input().rstrip().split()) 
-    if i == 1:
-        print(w[j-1])
-    else:
-        print(w[j-1]-w[i-2])
+    i, j = map(int, input().split())
+    print(w[j]-w[i-1])
