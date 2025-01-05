@@ -1,11 +1,9 @@
 S = int(input())
-total = 0
-count = 0
-
+a = 0
+b = 0
 while True:
-    count += 1
-    total += count
-    if total > S:
+    b += 1
+    a += b
+    if a > S:
         break
-
-print(count - 1)
+print(b-1)
