@@ -10,4 +10,4 @@ t = 0
 for j in range(l):
     t += d[s[j]] * (31 ** j)
 
-print(t)
+print(t % 1234567891)
