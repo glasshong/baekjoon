@@ -1,0 +1,5 @@
+n = int(input())
+s = set(map(int, input().split()))
+l = list(s)
+answer = sorted(l)
+print(*answer)
