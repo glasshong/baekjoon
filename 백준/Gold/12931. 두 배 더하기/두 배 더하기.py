@@ -19,7 +19,5 @@ while True:
                 if b[i] % 2 == 1:
                     b[i] = b[i] - 1
                     count += 1
-                else:
-                    pass
 
 print(count)
